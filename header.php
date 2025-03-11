@@ -5,8 +5,6 @@
     <?php wp_head();?>
 </head>
 <body <?php body_class();?>>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, exercitationem.</p>
-
     <!-- Header -->
 
     <header>
