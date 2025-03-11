@@ -23,7 +23,7 @@
         <!-- Second Section -->
         <section class="menu-area">
             <nav class="main-menu">
-               <?php  wp_nav_menu_array(
+               <?php  wp_nav_menu(
                   array('theme_location' => 'wp_devs_main_menu', 'depth' => 2)); ?>
             </nav>
         </section>
