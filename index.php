@@ -3,7 +3,7 @@
 <!-- Hero Section -->
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
-        <main id="main" class="side-main">
+        <main id="main" class="site-main">
             <section class="hero">
                 Hero
             </section>
@@ -22,6 +22,7 @@
                         ?>
                             <article>
                                 <h2><?php the_title(); ?></h2>
+                                <?php the_post_thumbnail(array(275,275)); ?>
                                 <div class="meta-info">
                                     <p>Posted in by <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
                                     <p>Categories: <?php the_category();?></p>
