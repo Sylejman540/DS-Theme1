@@ -23,7 +23,62 @@ function dstheme_config(){
 
         add_theme_support('custom-header', $args);
         add_theme_support('post-thumbnails');
+        add_theme_support('custom-logo', array(
+                'width' => 200,
+                'height' => 110,
+                'flex-height' => true,
+                'flex-width' => true
+        ));
 }
 
-add_action('after_setup_theme', 'dstheme_config', 0)
+add_action('after_setup_theme', 'dstheme_config', 0);
+
+add_action('widgets_init', 'dstheme_sidebars');
+function dstheme_sidebars(){
+    register_sidebar(
+        array(
+            'name' => 'Blog Sidebar',
+            'id' => 'sidebar-blog',
+            'description' => 'This is the Blog Sidebar. You can add your widgets here.',
+            'before_widget' => '<div class = "widget-title">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class = "widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 1',
+            'id' => 'services',
+            'description' => 'First Service Area.',
+            'before_widget' => '<div class = "widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class = "widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 2',
+            'id' => 'services-2',
+            'description' => 'Second Service Area.',
+            'before_widget' => '<div class = "widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class = "widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Service 3',
+            'id' => 'services-3',
+            'description' => 'Third Service Area',
+            'before_widget' => '<div class = "widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class = "widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+} 
+
 ?>
