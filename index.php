@@ -34,6 +34,7 @@
                             endwhile;
                         endif;?>
                     </div>
+                    <?php get_sidebar()?>
                 </div>
             </section>
         </main>
