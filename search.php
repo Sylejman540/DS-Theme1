@@ -3,6 +3,9 @@
 <div class="primary">
     <div class="main">
         <div class="container">
+    
+        <h3>Search result for <php echo get_search_query();?></h3>
+   
             <?php
             while( have_posts() ):
                 the_post();
@@ -19,6 +22,7 @@
                     <div class="content">
                         <?php the_excerpt(); ?>
                     </div>
+
                 </article>
                 <?php
             endwhile;
