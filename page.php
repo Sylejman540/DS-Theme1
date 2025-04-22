@@ -10,12 +10,7 @@ width="<?php echo get_custom_header()->width ?>" alt="">
                             <div class="page-item">
                                 <?php
                                     while( have_posts() ): the_post();
-                                        ?>
-                                            <article>
-                                                <h1><?php the_title(); ?></h1>
-                                                <?php the_content(); ?>
-                                            </article>
-                                        <?php
+                                        get_template_part( 'parts/content', 'page' );
                                     endwhile;
                                  ?>
                             </div>
