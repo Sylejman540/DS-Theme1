@@ -25,7 +25,7 @@ width="<?php echo get_custom_header()->width ?>" alt="">
                                         <?php
                                     endwhile;
                                 else: ?>
-                                    <p>Nothing to be displayed!</p>          
+                                    <p><?php esc_html_e('Nothing to be displayed!', 'wp-devs') ?></p>          
                                 <?php endif; ?>
                             </div>
                         </div>
