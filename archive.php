@@ -26,7 +26,7 @@
 
                                     <?php
                                 else: ?>
-                                    <p>Nothing yet to be displayed!</p>
+                                    <p><?php esc_html_e('Nothing yet to be displayed!', 'wp-devs');?></p>
                             <?php endif; ?>                                
                         </div>
                         <?php get_sidebar(); ?>
