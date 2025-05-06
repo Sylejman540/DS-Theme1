@@ -5,7 +5,7 @@ width="<?php echo get_custom_header()->width ?>" alt="">
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                <h1>Blog</h1>
+                <h1><?php esc_html_e('Blog', 'wp-devs') ?></h1>
                     <section class="home-blog">
                         <div class="container">
                             <div class="blog-items">
@@ -28,7 +28,7 @@ width="<?php echo get_custom_header()->width ?>" alt="">
                                        </div>
                                     <?php
                                 else: ?>
-                                    <p>Nothing to be displayed!</p>          
+                                    <p><?php esc_html_e('Nothing to be displayed!', 'wp-devs') ?></p>          
                                 <?php endif; ?>
                             </div>
                             <?php get_sidebar(); ?>
