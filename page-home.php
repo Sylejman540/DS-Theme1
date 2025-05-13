@@ -12,7 +12,7 @@
                   
                     ?>
                     <section class="hero" style="background-image: url('<?php echo $hero_background;?>')">
-                        <div class="overlay" style="min-height: <?php echo $hero_height; ?>">
+                        <div class="overlay" style="min-height: 600px">
                            <div class="container">
                                <div class="hero-items">
                                    <h1><?php echo $hero_title; ?></h1>
@@ -27,8 +27,8 @@
                         <div class="container">
                             <div class="services-item">
                                 <?php
-                                    if( is_active_sidebar( 'sevices-1' )){
-                                        dynamic_sidebar( 'sevices-1' );
+                                    if( is_active_sidebar( 'services-1' )){
+                                        dynamic_sidebar( 'services-1' );
                                     }
                                 ?>
                             </div>
@@ -36,13 +36,6 @@
                                 <?php
                                     if( is_active_sidebar( 'services-2' )){
                                         dynamic_sidebar( 'services-2' );
-                                    }
-                                ?>
-                            </div>
-                            <div class="services-item">
-                                <?php
-                                    if( is_active_sidebar( 'services-3' )){
-                                        dynamic_sidebar( 'services-3' );
                                     }
                                 ?>
                             </div>
