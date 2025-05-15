@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -7,18 +8,21 @@
 </head>
 <body <?php body_class(); ?>>
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="site-branding">
-        <img src="http://localhost/Wordpress/wordpress/wp-content/uploads/2025/05/logo-5.png" alt="Toothwise Logo" class="logo">
-      </div>
-      <nav class="main-nav">
+  <div class="container header-inner">
+    <div class="site-branding">
+      <img src="http://localhost/Wordpress/wordpress/wp-content/uploads/2025/05/logo-5.png" alt="Toothwise Logo" class="logo">
+    </div>
+    <nav class="main-nav">
       <?php
         wp_nav_menu([
-        'theme_location' => 'primary',
-        'menu_class' => 'nav-menu',
-        'container' => false
-      ]);
+          'theme_location' => 'primary',
+          'menu_class' => 'nav-menu',
+          'container' => false
+        ]);
       ?>
-      </nav>
+    </nav>
+    <div class="header-search">
+      <?php get_search_form(); ?>
     </div>
-  </header>
+  </div>
+</header>
