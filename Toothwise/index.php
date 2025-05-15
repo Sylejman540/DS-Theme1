@@ -5,7 +5,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Your Smile, Our Priority</h2>
+      <h1>Your Smile, Our Priority</h1>
       <p>Toothwise provides expert dental care with compassion and comfort.</p>
       <a href="/contact" class="btn">Book an Appointment</a>
     </div>
@@ -32,6 +32,43 @@
     </div>
   </div>
 </section>
+<section class="feedback-section">
+  <h3 class="section-title">What Our Patients Say</h3>
+  <div class="feedback-grid">
+    
+    <div class="feedback-card">
+      <div class="feedback-header">
+        <strong>Jane Doe</strong>
+        <div class="stars">
+          ★★★★★
+        </div>
+      </div>
+      <p>Toothwise made me feel comfortable during every visit. Highly recommended!</p>
+    </div>
+    
+    <div class="feedback-card">
+      <div class="feedback-header">
+        <strong>Mark Smith</strong>
+        <div class="stars">
+          ★★★★☆
+        </div>
+      </div>
+      <p>Great service and friendly staff. My teeth have never looked better.</p>
+    </div>
+    
+    <div class="feedback-card">
+      <div class="feedback-header">
+        <strong>Linda Johnson</strong>
+        <div class="stars">
+          ★★★★★
+        </div>
+      </div>
+      <p>Professional and caring dentists. I trust them with my family’s smiles.</p>
+    </div>
+
+  </div>
+</section>
+
 </main>
 
 <?php get_footer(); ?>
